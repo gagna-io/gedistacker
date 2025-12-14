@@ -1,0 +1,23 @@
+{
+  "name": "gedistacker",
+  "version": "0.0.1-beta",
+  "description": "Stacker for astrophotography",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Warning: No test specified\" && exit 1"
+  },
+  "keywords": [
+    "stacker",
+    "astrophotography"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsfitsio": "^1.2.3"
+  },
+  "devDependencies": {
+    "@tsconfig/node24": "^24.0.3",
+    "typescript": "^5.9.3"
+  }
+}
