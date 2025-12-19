@@ -2,10 +2,10 @@
 import { program } from "commander";
 import GediStacker from "./GediStacker";
 
-program.action(() => {
+program.action(async () => {
   console.log(` \nInitializing GediStacker..`);
   const gediStacker = new GediStacker();
-  gediStacker.run();
+  await gediStacker.run();
 });
 
 program.parse(process.argv);

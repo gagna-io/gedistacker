@@ -1,15 +1,15 @@
-import FitsReader from "./utils/FitsReader";
+import FitsHandler from "./utils/FitsHandler";
 
 class GediStacker {
-  private fitsReader: FitsReader;
+  private fitsHandler: FitsHandler;
 
   constructor() {
-    this.fitsReader = new FitsReader();
+    console.log(" \nLoading files..");
+    this.fitsHandler = new FitsHandler();
   }
 
-  public run() {
-    console.log(" \nLoading files..");
-    this.fitsReader.load();
+  public async run() {
+    await this.fitsHandler.run();
   }
 }
 
