@@ -2,5 +2,11 @@
   "extends": "@tsconfig/node24/tsconfig.json",
   "compilerOptions": {
     "outDir": "dist"
-  }
+    // "target": "esnext",
+    // "module": "commonjs",
+    // "moduleResolution": "bundler",
+    // "strict": true,
+    // "skipLibCheck": true
+  },
+  "exclude": ["src/**/*.test.ts", "*.config.*"]
 }
